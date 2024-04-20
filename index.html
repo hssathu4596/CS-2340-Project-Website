@@ -1,7 +1,89 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <h1>Hello World</h1>
-        <p>I'm hosted with GitHub Pages.</p>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenPlate: A Sustainable Food Management System</title>
+</head>
+<body>
+    <header>
+        <h1>GreenPlate: A Sustainable Food Management System</h1>
+        <p>Welcome to GreenPlate, your ultimate solution for sustainable eating and shopping habits!</p>
+    </header>
+    
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>
+            GreenPlate is more than just an app; it's a movement towards a more sustainable lifestyle. In a world where food waste and inefficient resource utilization are pressing concerns, GreenPlate emerges as a beacon of change. Our app is dedicated to fostering sustainable eating and shopping habits by empowering users to make conscious choices that benefit both the planet and their well-being. GreenPlate boasts a user-friendly interface designed to streamline your sustainable food management journey. Simply create a secure account, log your meals, explore our extensive recipe database, and let GreenPlate do the rest. With intuitive features and actionable insights, our app empowers you to make informed decisions that benefit both your health and the environment.
+        </p>
+    </section>
+    
+    <section id="key-features">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Food Tracking: Track your daily calorie intake and monitor your nutritional goals effortlessly.</li>
+            <li>Recipe Management: Create, save, and cook delicious recipes while managing ingredient quantities efficiently.</li>
+            <li>Pantry Organization: Keep tabs on your ingredient inventory and minimize food waste by utilizing what you already have.</li>
+            <li>Shopping List Generation: Automatically generate shopping lists based on missing recipe ingredients, ensuring you only buy what you need.</li>
+            <li>Actionable Insights: Receive personalized recommendations and insights related to recipes, ingredients, and purchasing needs, making meal planning a breeze.</li>
+        </ul>
+    </section>
+    
+    <section id="design-and-architecture">
+        <h2>Design and Architecture</h2>
+        <p>
+            GreenPlate's architecture is designed around the Model-View-ViewModel (MVVM) architecture pattern, leveraging Android Studio and Java to create a robust and maintainable application. MVVM separates the user interface logic from the business logic, promoting a clean and organized codebase that is easy to understand, test, and maintain.
+        </p>
+        
+        <!-- Components -->
+        <h3>Components</h3>
+        <ul>
+            <li><strong>Model:</strong>
+                <ul>
+                    <li>Represents the data and business logic of the application.</li>
+                    <li>Encapsulates data sources, such as our Firebase database.</li>
+                    <li>Provides methods for retrieving, updating, and deleting data.</li>
+                    <li>Acts as classes for ingredients, meals, and other entities.</li>
+                </ul>
+            </li>
+            <li><strong>View:</strong>
+                <ul>
+                    <li>Represents the user interface components of the application.</li>
+                    <li>Observes changes in the ViewModel and updates the UI accordingly.</li>
+                    <li>Delegates user interactions to the ViewModel for processing.</li>
+                </ul>
+            </li>
+            <li><strong>ViewModel:</strong>
+                <ul>
+                    <li>Acts as an intermediary between the Model and the View.</li>
+                    <li>Contains the presentation logic and state of the UI.</li>
+                    <li>Retrieves data from the Model, processes it, and exposes it to the View via observable properties.</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <!-- Design Patterns -->
+        <h3>Design Patterns</h3>
+        <ul>
+            <li><strong>Observer/Observable Pattern:</strong>
+                <ul>
+                    <li>Facilitates communication between the ViewModel and the View.</li>
+                    <li>Allows the View to observe changes in the ViewModel's state and update the UI accordingly.</li>
+                    <li>Enhances separation of concerns by decoupling the View from the ViewModel.</li>
+                </ul>
+            </li>
+            <li><strong>Factory Pattern:</strong>
+                <ul>
+                    <li>Encapsulates the creation of ViewModel instances.</li>
+                    <li>Provides a centralized location for constructing ViewModels with their dependencies.</li>
+                    <li>Promotes code reuse and maintainability by abstracting ViewModel creation logic.</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <p>
+            By adopting the MVVM architecture pattern and implementing various design patterns within Android Studio using Java, GreenPlate achieves a well-structured, maintainable, and scalable codebase. The separation of concerns between the Model, View, and ViewModel enables developers to work efficiently and collaboratively, while also ensuring a smooth user experience for GreenPlate's users. With a focus on clean architecture and best practices, GreenPlate is poised to deliver a sustainable food management solution that makes a positive impact on both users and the environment.
+        </p>
+    </section>
+</body>
 </html>
