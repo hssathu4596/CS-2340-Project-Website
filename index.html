@@ -69,19 +69,12 @@
                 <p>We utilize the Observer design pattern through the utilization of MutableLiveData objects that provide the connections between classes. For example, the cookbook monitors the pantry and updates every time there are ingredients added or removed from the pantry. The cookbook calculates whether there are sufficient ingredients and indicates to the user whether they would be able to cook the recipe. In this case, the pantry serves as the observable part of the pattern and the cookbook servers as the observer. 
 </p>
             </li>
-            <li><strong>Factory Pattern:</strong>
-                <ul>
-                    <li>Encapsulates the creation of ViewModel instances.</li>
-                    <li>Provides a centralized location for constructing ViewModels with their dependencies.</li>
-                    <li>Promotes code reuse and maintainability by abstracting ViewModel creation logic.</li>
-                </ul>
+            <li><strong> Singleton Pattern:</strong>
+                <p>We made the User class a singleton because it makes sense to have only 1 user at a time logged into the app. Each time a user logs into the app, a new User object is created for the user that is logged into the app. There should not be multiple users logged into the app on the same device at a time, so making the User class a singleton prevents this from happening by only allowing 1 user object to be created.</p>
             </li>
             <li><strong>Strategy Pattern:</strong>
-                <ul>
-                    <li>Encapsulates the creation of ViewModel instances.</li>
-                    <li>Provides a centralized location for constructing ViewModels with their dependencies.</li>
-                    <li>Promotes code reuse and maintainability by abstracting ViewModel creation logic.</li>
-                </ul>
+                <p>This code snapshot demonstrates the use of the Strategy design pattern because the RecipeFragment class can dynamically choose from the filtering strategies at run time depending on the way the user wishes to sort their recipes. The three concrete strategies are the different ways that the user can choose to filter their recipes and are depicted by the classes CalorieFilter, IngredientCountFilter, and NoFilter which all implement the FilterStrategy interface. The context part of the Strategy Design Pattern is demonstrated through the use of the FilterContext class which contains a reference to the filter strategy being used currently. By using the Strategy Design Pattern in our code, we give our users the ability to select different ways to view their recipes and ensure that our code is easily maintainable and extendable if we would like to add more ways to sort the recipes in the future.
+</p>
             </li>
         </ul>
         
