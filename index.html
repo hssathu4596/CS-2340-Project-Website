@@ -82,6 +82,28 @@
             By adopting the MVVM architecture pattern and implementing various design patterns within Android Studio using Java, GreenPlate achieves a well-structured, maintainable, and scalable codebase. The separation of concerns between the Model, View, and ViewModel enables developers to work efficiently and collaboratively, while also ensuring a smooth user experience for GreenPlate's users. With a focus on clean architecture and best practices, GreenPlate is poised to deliver a sustainable food management solution that makes a positive impact on both users and the environment.
         </p>
 
+        <!-- Design Patterns -->
+        <h3>Design Diagrams</h3>
+        <ul>
+            <li><strong>Domain Model:</strong>
+                
+            </li>
+            <li><strong> Systems Sequence Diagram:</strong>
+                <p>We made the User class a singleton because it makes sense to have only 1 user at a time logged into the app. Each time a user logs into the app, a new User object is created for the user that is logged into the app. There should not be multiple users logged into the app on the same device at a time, so making the User class a singleton prevents this from happening by only allowing 1 user object to be created.</p>
+            </li>
+            <li><strong> Sequence Diagram:</strong>
+                <p>This code snapshot demonstrates the use of the Strategy design pattern because the RecipeFragment class can dynamically choose from the filtering strategies at run time depending on the way the user wishes to sort their recipes. The three concrete strategies are the different ways that the user can choose to filter their recipes and are depicted by the classes CalorieFilter, IngredientCountFilter, and NoFilter which all implement the FilterStrategy interface. The context part of the Strategy Design Pattern is demonstrated through the use of the FilterContext class which contains a reference to the filter strategy being used currently. By using the Strategy Design Pattern in our code, we give our users the ability to select different ways to view their recipes and ensure that our code is easily maintainable and extendable if we would like to add more ways to sort the recipes in the future.
+</p>
+            </li>
+            <li><strong> Domain Class Diagram:</strong>
+                <p>We made the User class a singleton because it makes sense to have only 1 user at a time logged into the app. Each time a user logs into the app, a new User object is created for the user that is logged into the app. There should not be multiple users logged into the app on the same device at a time, so making the User class a singleton prevents this from happening by only allowing 1 user object to be created.</p>
+            </li>
+        </ul>
+        
+        <p>
+            By adopting the MVVM architecture pattern and implementing various design patterns within Android Studio using Java, GreenPlate achieves a well-structured, maintainable, and scalable codebase. The separation of concerns between the Model, View, and ViewModel enables developers to work efficiently and collaboratively, while also ensuring a smooth user experience for GreenPlate's users. With a focus on clean architecture and best practices, GreenPlate is poised to deliver a sustainable food management solution that makes a positive impact on both users and the environment.
+        </p>
+
         <strong>Contributors:</strong> <span>Harini Sathu, Julie Young, Reese Wang, Simona Ivanov, Amritha Pramod, and Saniya Savla</span>
         
     </section>
