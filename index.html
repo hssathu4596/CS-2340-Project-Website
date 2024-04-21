@@ -66,13 +66,17 @@
         <h3>Design Patterns</h3>
         <ul>
             <li><strong>Observer/Observable Pattern:</strong>
-                <ul>
-                    <li>Facilitates communication between the ViewModel and the View.</li>
-                    <li>Allows the View to observe changes in the ViewModel's state and update the UI accordingly.</li>
-                    <li>Enhances separation of concerns by decoupling the View from the ViewModel.</li>
-                </ul>
+                <p>We utilize the Observer design pattern through the utilization of MutableLiveData objects that provide the connections between classes. For example, the cookbook monitors the pantry and updates every time there are ingredients added or removed from the pantry. The cookbook calculates whether there are sufficient ingredients and indicates to the user whether they would be able to cook the recipe. In this case, the pantry serves as the observable part of the pattern and the cookbook servers as the observer. 
+</p>
             </li>
             <li><strong>Factory Pattern:</strong>
+                <ul>
+                    <li>Encapsulates the creation of ViewModel instances.</li>
+                    <li>Provides a centralized location for constructing ViewModels with their dependencies.</li>
+                    <li>Promotes code reuse and maintainability by abstracting ViewModel creation logic.</li>
+                </ul>
+            </li>
+            <li><strong>Strategy Pattern:</strong>
                 <ul>
                     <li>Encapsulates the creation of ViewModel instances.</li>
                     <li>Provides a centralized location for constructing ViewModels with their dependencies.</li>
